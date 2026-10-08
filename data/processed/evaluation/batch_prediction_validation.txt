@@ -1,0 +1,41 @@
+================================================================================
+BATCH PREDICTION VALIDATION REPORT
+================================================================================
+
+Feature dataset rows: 106946
+Prediction dataset rows: 106946
+Validation rows: 106946
+Missing predictions: 0
+Extra predictions: 0
+
+ACTUAL LABELS
+Actual churn: 68731
+Actual retained: 38215
+Actual churn rate: 64.2670%
+
+PREDICTIONS
+Predicted churn: 95464
+Predicted retained: 11482
+Predicted churn rate: 89.2637%
+
+CONFUSION MATRIX
+TN: 9630
+FP: 28585
+FN: 1852
+TP: 66879
+
+METRICS
+Accuracy: 0.715398
+Precision: 0.700568
+Recall: 0.973054
+F1: 0.814629
+ROC-AUC: 0.749199
+PR-AUC: 0.820356
+
+PREDICTION CONSISTENCY
+Threshold: 0.38
+Matching predictions: 106946
+Mismatching predictions: 0
+Consistency: 100.0000%
+
+STATUS: PASSED

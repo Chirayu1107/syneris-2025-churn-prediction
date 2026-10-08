@@ -1,0 +1,42 @@
+================================================================================
+CUSTOMER CHURN PREDICTION - FINAL EVALUATION REPORT
+================================================================================
+
+DATASET
+--------------------------------------------------------------------------------
+Dataset rows: 106946
+Features: 29
+Observation cutoff: 2022-10-09 00:09:15
+Churn window: 60 days
+Churn rate: 0.64267
+
+FINAL MODEL
+--------------------------------------------------------------------------------
+Model: XGBoost
+Threshold: 0.4
+
+METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.695699
+Precision: 0.692336
+Recall: 0.947625
+F1 Score: 0.800111
+ROC-AUC: 0.712113
+PR-AUC: 0.793771
+
+CONFUSION MATRIX
+--------------------------------------------------------------------------------
+True Negatives: 1854
+False Positives: 5789
+False Negatives: 720
+True Positives: 13027
+
+INTERPRETATION
+--------------------------------------------------------------------------------
+The final XGBoost model was selected after comparison with Logistic Regression and Random Forest.
+
+The classification threshold was reduced from 0.50 to 0.40 to improve churn recall and F1 score.
+
+The final model achieved a recall of 94.76%, meaning it identified approximately 94.76 out of every 100 actual churned customers in the test set.
+
+The main behavioral signals identified by SHAP include purchase frequency, search recency, cart recency, product diversity, and recent customer activity.

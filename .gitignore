@@ -1,0 +1,39 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Raw and generated datasets
+data/raw/
+*.parquet
+
+# Generated analysis data
+data/analysis/
+data/processed/*.csv
+data/processed/data_audit/
+data/processed/model_analysis/
+
+# Generated evaluation data
+data/processed/evaluation/*.csv
+
+# Trained model binaries
+*.joblib
+
+# Environment/secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
